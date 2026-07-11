@@ -46,6 +46,9 @@ main {
     max-width: 700px;
     width: 100%;
     margin-top: 98px;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
 }
 
 .card-list {
@@ -112,4 +115,20 @@ main {
 
 .img8 {
     filter: saturate(30%) invert(20%) contrast(200%) hue-rotate(100deg) brightness(80%);
+}
+
+.button_save {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 335px;
+    padding: 15px 20px;
+    border: 2px solid #000000;
+}
+
+.save {
+    font-size: 14px;
+    line-height: 90%;
 }
