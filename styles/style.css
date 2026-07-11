@@ -13,4 +13,103 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-image: repeating-linear-gradient(to right, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px), repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px), linear-gradient(to bottom, #e7e7e7 .01%, #1a1a1a);;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+    max-width: 700px;
+    width: 100%;
+    background-color: white;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+    height: 368px;
+    border: 2px solid #000000;
+}
+
+.site {
+    font-size: 68px;
+}
+
+.tag {
+    font-size: 23px;
+}
+
+main {
+    justify-self: center;
+    max-width: 700px;
+    width: 100%;
+    margin-top: 98px;
+}
+
+.card-list {
+    display: grid;
+    gap: 50px;
+}
+
+.card {
+    background-color: white;
+    border: 2px solid #000000;
+}
+
+.card_header {}
+
+.card_image {
+    position: relative;
+    height: 696px;
+    width: 100%;
+}
+
+.image_card {
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+
+.watermark {
+    position: absolute;
+    z-index: 1;
+    top: 25px;
+    right: 25px;
+}
+
+.text_info {
+    padding: 25px;
+}
+
+.my_text {
+    padding: 0 25px 25px 25px;
+}
+
+.img2 {
+    filter: saturate(30%);
+}
+
+.img3 {
+    filter: saturate(500%);
+}
+
+.img4 {
+    filter: saturate(200%) grayscale(50%) hue-rotate(25deg) sepia(30%);
+}
+
+.img5 {
+    filter: saturate(220%) invert(60%) contrast(200%) brightness(120%);
+}
+
+.img6 {
+    filter: saturate(30%) sepia(60%) invert(20%) grayscale(50%) contrast(200%);
+}
+
+.img7 {
+    filter: saturate(80%) blur(5px);
+}
+
+.img8 {
+    filter: saturate(30%) invert(20%) contrast(200%) hue-rotate(100deg) brightness(80%);
 }
