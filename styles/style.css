@@ -144,7 +144,6 @@ main {
     filter: saturate(30%) invert(20%) contrast(200%) hue-rotate(100deg) brightness(80%);
 }
 
-
 .button_save {
     position: relative;
     display: flex;
@@ -383,6 +382,7 @@ main {
         width: 371px;
         height: 371px;
     }
+
     .image_card {
         width: 100%;
     }
