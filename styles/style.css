@@ -90,7 +90,6 @@ main {
     font-size: 14px;
     opacity: 0.5;
     color: black;
-    /* fallback */
     text-shadow: 0 0 3px white;
 }
 
