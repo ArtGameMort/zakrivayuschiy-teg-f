@@ -88,8 +88,17 @@ main {
     font-family: PressStart2P, fantasy;
     font-size: 14px;
     opacity: 0.5;
-    text-shadow: 0 0 3px #ffffff;
-    color: #000000;
+    color: black;
+    /* fallback */
+    text-shadow: 0 0 3px white;
+}
+
+@supports ((text-stroke: 1px white) or (-webkit-text-stroke: 1px white)) {
+    .watermark {
+        text-shadow: none;
+        -webkit-text-stroke: 1px white;
+        text-stroke: 1px white;
+    }
 }
 
 .text_info {
@@ -192,6 +201,54 @@ main {
 
 .card__icon-button:hover {
     transition: background-position 0.3s ease, color 0.3s ease, fill 0.3s ease;
+}
+
+/* Диалоговое окно */
+.dialog {
+    border: 2px solid black;
+    padding: 30px;
+    max-width: 353px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dialog-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.dialog-element {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.dialog-text {
+    font-family: PressStart2P, sans-serif;
+    font-size: 14px;
+    width: 100%;
+    max-width: 234px;
+    line-height: 150%;
+}
+
+.dialog-close {
+    padding: 9px 17px;
+    border: 2px solid black;
+    background-color: white;
+    font-family: PressStart2P, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.dialog-close:focus {
+    outline: none;
+    box-shadow: 1px 1px 2px black;
 }
 
 @media (width <= 375px) {
