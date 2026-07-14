@@ -85,6 +85,12 @@ main {
     z-index: 1;
     top: 25px;
     right: 25px;
+    mix-blend-mode: hard-light;
+    font-family: PressStart2P, fantasy;
+    font-size: 14px;
+    opacity: 0.5;
+    text-shadow: 0 0 3px #ffffff;
+    color: #000000;
 }
 
 .text_info {
@@ -122,7 +128,7 @@ main {
 }
 
 .img7 {
-    filter: saturate(80%) blur(5px);
+    filter: saturate(80%) blur(4px);
 }
 
 .img8 {
