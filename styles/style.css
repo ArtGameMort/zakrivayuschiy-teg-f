@@ -35,10 +35,12 @@
 
 .site {
     font-size: 68px;
+    font-family: PressStart2P, sans-serif;
 }
 
 .tag {
     font-size: 23px;
+    font-family: PressStart2P, sans-serif;
 }
 
 main {
@@ -61,7 +63,11 @@ main {
     border: 2px solid #000000;
 }
 
-.card_header {}
+.card_header {
+    font-family: Inter, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
 
 .card_image {
     position: relative;
@@ -87,6 +93,12 @@ main {
 
 .my_text {
     padding: 0 25px 25px 25px;
+}
+
+.text {
+    font-family: Inter, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
 }
 
 .img2 {
@@ -123,7 +135,6 @@ main {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    width: 335px;
     padding: 15px 20px;
     border: 2px solid #000000;
 }
@@ -131,6 +142,7 @@ main {
 .save {
     font-size: 14px;
     line-height: 90%;
+    font-family: PressStart2P, sans-serif;
 }
 
 .card_buttons {
@@ -145,10 +157,14 @@ main {
     width: 130px;
     height: 38px;
     border: 2px solid #000000;
+    justify-content: center;
+    display: flex;
 }
 
 .like_text {
     padding: 9px 17px;
+    font-family: PressStart2P, sans-serif;
+    font-size: 14px;
 }
 
 .card__icon-button {
