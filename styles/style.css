@@ -19,8 +19,7 @@
 }
 
 .header {
-    max-width: 700px;
-    width: 100%;
+    width: clamp(23.438rem, 16.2859rem + 30.5157vw, 43.75rem);
     background-color: white;
     justify-self: center;
     align-self: center;
@@ -34,12 +33,12 @@
 }
 
 .site {
-    font-size: 68px;
+    font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);;
     font-family: PressStart2P, sans-serif;
 }
 
 .tag {
-    font-size: 23px;
+    font-size: clamp(0.875rem, 0.6477rem + 1.1364vw, 1.5rem);;
     font-family: PressStart2P, sans-serif;
 }
 
@@ -112,23 +111,23 @@ main {
 }
 
 .img3 {
-    filter: saturate(500%);
+    filter: invert(100%);
 }
 
 .img4 {
-    filter: saturate(200%) grayscale(50%) hue-rotate(25deg) sepia(30%);
+    filter: grayscale(50%);
 }
 
 .img5 {
-    filter: saturate(220%) invert(60%) contrast(200%) brightness(120%);
+    filter: contrast(200%);
 }
 
 .img6 {
-    filter: saturate(30%) sepia(60%) invert(20%) grayscale(50%) contrast(200%);
+    filter: saturate(30%) invert(20%) contrast(200%);
 }
 
 .img7 {
-    filter: saturate(80%) blur(4px);
+    filter: sepia(80%);
 }
 
 .img8 {
@@ -176,4 +175,14 @@ main {
 .card__icon-button {
     background-color: transparent;
     border: none;
+}
+
+@media (width <= 375px) {
+    .card_image {
+        width: 371px;
+        height: 371px;
+    }
+    .image_card {
+        width: 100%;
+    }
 }
