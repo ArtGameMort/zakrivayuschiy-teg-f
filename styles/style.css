@@ -144,15 +144,58 @@ main {
     filter: saturate(30%) invert(20%) contrast(200%) hue-rotate(100deg) brightness(80%);
 }
 
+
 .button_save {
+    position: relative;
     display: flex;
-    align-self: center;
     justify-content: center;
+    align-self: center;
     align-items: center;
+    background-color: var(--white_color);
+    border: var(--border);
+    cursor: pointer;
+    transition: background-color 0.5s;
+    margin-bottom: 100px;
     gap: 8px;
     padding: 15px 20px;
-    border: var(--border);
-    margin-bottom: 100px;
+}
+
+.button_save::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--black_color);
+    transition: width 0.5s ease-in-out;
+    z-index: 0;
+}
+
+.button_save:hover::before {
+    width: 100%;
+}
+
+.button_save svg path {
+    position: relative;
+    z-index: 1;
+    fill: var(--black_color);
+    transition: fill 0.5s ease-in-out;
+}
+
+.button_save:hover svg path {
+    fill: var(--white_color);
+}
+
+.button_save .save {
+    position: relative;
+    z-index: 1;
+    color: var(--black_color);
+    transition: color 0.5s ease-in-out;
+}
+
+.button_save:hover .save {
+    color: var(--white_color);
 }
 
 .save {
@@ -193,6 +236,7 @@ main {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    transition: background-color 0.5s;
 }
 
 .card__icon-button:focus {
@@ -200,11 +244,53 @@ main {
     border: var(--border);
 }
 
-.card__icon-button:hover {
-    transition: background-position 0.3s ease, color 0.3s ease, fill 0.3s ease;
+
+.card__like-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: var(--border);
+    cursor: pointer;
+    transition: background-color 0.5s;
 }
 
-/* Диалоговое окно */
+.card__like-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--black_color);
+    transition: width 0.5s ease-in-out;
+    z-index: 0;
+}
+
+.card__like-button:hover::before {
+    width: 100%;
+}
+
+.card__like-button .button__text {
+    position: relative;
+    z-index: 1;
+    color: var(--black_color);
+    transition: color 0.5s ease-in-out;
+    padding: 9px 17px;
+    font-family: var(--ff-2P, fantasy), fantasy;
+    font-size: var(--fs_text);
+}
+
+.card__like-button:hover .button__text {
+    color: var(--white_color);
+}
+
+.card__like-button:focus {
+    outline: none;
+    border: var(--border);
+}
+
 .dialog {
     border: var(--border);
     padding: 30px;
