@@ -21,9 +21,9 @@
 .header {
     width: clamp(23.438rem, 16.2859rem + 30.5157vw, 43.75rem);
     background-color: var(--white_color);
+    display: flex;
     justify-self: center;
     align-self: center;
-    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
