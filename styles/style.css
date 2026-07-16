@@ -164,15 +164,17 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    width: 0;
+    width: 100%;
     height: 100%;
     background-color: var(--black_color);
-    transition: width 0.5s ease-in-out;
+    transform: scale(0);
+    transform-origin: top left;
+    transition: transform 0.5s ease-in-out;
     z-index: 0;
 }
 
 .button_save:hover::before {
-    width: 100%;
+    transform: scale(1);
 }
 
 .button_save svg {
@@ -268,15 +270,17 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    width: 0;
+    width: 100%;
     height: 100%;
     background-color: var(--black_color);
-    transition: width 0.5s ease-in-out;
+    transform: scale(0);
+    transform-origin: top left;
+    transition: transform 0.5s ease-in-out;
     z-index: 0;
 }
 
 .card__like-button:hover::before {
-    width: 100%;
+    transform: scale(1);
 }
 
 .card__like-button .button__text {
@@ -350,15 +354,17 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    width: 0;
+    width: 100%;
     height: 100%;
     background-color: var(--black_color);
-    transition: width 0.5s ease-in-out;
+    transform: scale(0);
+    transform-origin: top left;
+    transition: transform 0.5s ease-in-out;
     z-index: 0;
 }
 
 .dialog-close:hover::before {
-    width: 100%;
+    transform: scale(1);
 }
 
 .dialog-close .dialog-text-button {
