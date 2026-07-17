@@ -4,10 +4,8 @@
 ✦ like-icon — для svg-иконки анимированного сердца
 ✦ card__like-button — для кнопки Like рядом с иконкой
 ✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
-
 */
 
 .page {
@@ -76,11 +74,15 @@ main {
     position: relative;
     height: 696px;
     width: 100%;
+    border-top: var(--border);
+    border-bottom: var(--border);
 }
 
 .image_card {
-    border-top: var(--border);
-    border-bottom: var(--border);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .watermark {
@@ -155,7 +157,6 @@ main {
     border: var(--border);
     cursor: pointer;
     background-color: transparent;
-    transition: background-color 0.5s;
 }
 
 .button::before {
@@ -179,14 +180,10 @@ main {
 .button .button__text {
     position: relative;
     z-index: 1;
-    color: var(--black_color);
-    transition: color 0.5s ease-in-out;
+    color: #fff;
+    mix-blend-mode: difference;
     font-family: var(--ff-2P, fantasy), fantasy;
     font-size: var(--fs_text);
-}
-
-.button:hover .button__text {
-    color: var(--white_color);
 }
 
 .button:focus {
@@ -206,14 +203,10 @@ main {
 }
 
 .button_save svg {
-    color: var(--black_color);
+    color: #fff;
+    mix-blend-mode: difference;
     position: relative;
     z-index: 1;
-    transition: color 0.5s ease;
-}
-
-.button_save:hover svg {
-    color: var(--white_color);
 }
 
 .card__like-button {
@@ -235,13 +228,20 @@ main {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    transition: border 0.3s ease;
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 39px;
-    height: 38px;
+    height: 39px;
+    transition: border 0.3s ease;
+}
+
+.like-icon {
+    display: block;
+    width: 39px;
+    height: 36px;
+    flex-shrink: 0;
 }
 
 .card__icon-button:focus {
