@@ -5,7 +5,7 @@
     linear-gradient(to bottom, #e7e7e7 .01%, #1a1a1a);
     --width_header: clamp(23.438rem, 16.2859rem + 30.5157vw, 43.75rem);
     --font_text_header: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-    --font_text_tag: clamp(0.875rem, 0.5909rem + 1.2121vw, 1.5rem);
+    --font_text_tag: clamp(0.875rem, 0.677rem + 0.845vw, 1.4375rem);
     --black_color: #000000;
     --white_color: #fff;
     --border: 2px solid var(--black_color);
