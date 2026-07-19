@@ -322,9 +322,11 @@ main {
     .card_image {
         width: 371px;
     }
+
     .image_card {
         width: 100%;
     }
+
     .button_save {
         flex-direction: column;
     }
@@ -332,6 +334,16 @@ main {
     .floppy {
         width: 28px;
         height: 28px;
+    }
+
+    .dialog {
+        width: 100%;
+        max-width: 341px;
+        padding: 40px;
+    }
+
+    .dialog-close {
+        padding: 11px 17px;
     }
 
 }
