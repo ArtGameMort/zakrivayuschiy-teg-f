@@ -27,7 +27,7 @@
     justify-content: center;
     flex-direction: column;
     margin-top: 100px;
-    padding: 130px 124px;
+    padding: 130px clamp(17px, 5vw, 124px);
     border: var(--border);
     gap: 20px
 }
@@ -297,7 +297,7 @@ main {
     text-transform: uppercase;
 }
 
-@media (width <= 375px) {
+@media (width <= 700px) {
     .header {
         padding: 120px 17px;
     }
@@ -317,10 +317,6 @@ main {
     .watermark {
         top: 27px;
         right: 25px;
-    }
-
-    .card_image {
-        width: 371px;
     }
 
     .image_card {
