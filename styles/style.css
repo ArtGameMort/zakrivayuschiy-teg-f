@@ -56,24 +56,25 @@ main {
 
 .card-list {
     display: grid;
-    gap: 50px;
+    gap: 51px;
 }
 
 .card {
     background-color: white;
     border: var(--border);
+    max-width: 700px;
+    width: 100%;
 }
 
 .card_header {
     font-family: var(--ff-inter, sans-serif), sans-serif;
-    font-weight: bold;
     font-size: 18px;
     font-variation-settings: 'wght' 715;
+    padding: 5px 10px;
 }
 
 .card_image {
     position: relative;
-    height: 696px;
     width: 100%;
     border-top: var(--border);
     border-bottom: var(--border);
@@ -81,10 +82,12 @@ main {
 
 .image_card {
     width: 100%;
+    max-height: 696px;
     height: 100%;
     object-fit: cover;
     display: block;
 }
+
 
 .watermark {
     position: absolute;
@@ -117,9 +120,10 @@ main {
 
 .text {
     font-family: var(--ff-inter, sans-serif), sans-serif;
-    font-weight: normal;
     font-size: 18px;
     font-variation-settings: 'wght' 400;
+    width: 100%;
+    max-width: 695px;
 }
 
 .filter-saturate {
@@ -218,11 +222,7 @@ main {
 
 .dialog-close {
     background-color: var(--white_color);
-    padding: 9px 17px;
-}
-
-.dialog-close .button__text {
-    padding: 9px 17px;
+    padding: 11px 17px;
 }
 
 .card__icon-button {
@@ -233,8 +233,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 39px;
-    height: 39px;
+    width: 27px;
     transition: border 0.3s ease;
 }
 
@@ -300,11 +299,28 @@ main {
 
 @media (width <= 375px) {
     .header {
-        padding: 122px 17px;
+        padding: 120px 17px;
     }
+
+    main {
+        margin-top: 100px;
+    }
+
+    .card-list {
+        gap: 49px;
+    }
+
+    .card_header {
+        padding: 4px 10px;
+    }
+
+    .watermark {
+        top: 27px;
+        right: 25px;
+    }
+
     .card_image {
         width: 371px;
-        height: 371px;
     }
     .image_card {
         width: 100%;
@@ -312,6 +328,12 @@ main {
     .button_save {
         flex-direction: column;
     }
+
+    .floppy {
+        width: 28px;
+        height: 28px;
+    }
+
 }
 
 .like-icon .contour {
