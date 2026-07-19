@@ -162,6 +162,7 @@ main {
     border: var(--border);
     cursor: pointer;
     background-color: transparent;
+    transition: box-shadow 0.3s ease;
 }
 
 .button::before {
@@ -233,7 +234,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 27px;
+    width: 38px;
     transition: border 0.3s ease;
 }
 
@@ -256,7 +257,7 @@ main {
     display: flex;
     justify-self: flex-end;
     padding: 0 25px 25px 0;
-    gap: 12px;
+    gap: 8px;
 }
 
 .dialog {
